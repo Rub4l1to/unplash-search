@@ -4,8 +4,6 @@ import App from "./components/App";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
-      <App />
-    </Suspense>
+    <App />
   </React.StrictMode>
 );
