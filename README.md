@@ -1,25 +1,18 @@
 # Unplash search
 
-The web application basically tries to connect to the unplash API and perform image searches based on our own search.
-
-## Features
-
----
-
-    Search engine for images
-
-## ⚡ Technologies
-
----
 
 ![Vite](https://img.shields.io/static/v1?style=for-the-badge&message=Vite&color=646CFF&logo=Vite&logoColor=FFFFFF&label=)
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=)
 ![React](https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=)
 ![Sass](https://img.shields.io/static/v1?style=for-the-badge&message=Sass&color=CC6699&logo=Sass&logoColor=FFFFFF&label=)
 
-## Setup
+The web application basically tries to connect to the unplash API and perform image searches based on our own search.
 
----
+## Features
+
+- Search engine for images
+
+## Setup
 
 `Install` all the dependecies in your clone:
 
@@ -27,7 +20,7 @@ The web application basically tries to connect to the unplash API and perform im
 $ yarn install / npm install
 ```
 
-`Initilize` the project:
+`Initialize` the project:
 
 ```bash
 $ yarn start / npm run start
