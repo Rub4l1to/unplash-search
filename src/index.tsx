@@ -1,9 +1,20 @@
-import React, { Suspense } from "react";
-import ReactDOM from "react-dom/client";
-import App from "./components/App";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+//* Styled components
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle, Theme } from '@/styles';
+
+import { SearchProvider } from '@/context';
+import { Home } from '@/screens';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <ThemeProvider theme={Theme}>
+      <GlobalStyle />
+      <SearchProvider>
+        <Home />
+      </SearchProvider>
+    </ThemeProvider>
+  </React.StrictMode>,
 );
