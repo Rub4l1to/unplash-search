@@ -10,12 +10,22 @@ export const HeaderStyled = styled.div`
     startBlock: 1,
     endBlock: 1,
   })}
-
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
   flex-wrap: no-wrap;
+
+  &::before {
+    content: '';
+    height: 1px;
+    box-shadow: inset -1px 1px 11px 5px ${({ theme: { colors } }) => colors.primary};
+    inline-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 `;
 
 export const LogoContainer = styled.figure`
