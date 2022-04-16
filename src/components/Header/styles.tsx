@@ -7,9 +7,15 @@ export const HeaderStyled = styled.div`
   ${Mixins.PaddingSize({
     startInline: 2,
     endInline: 2,
-    startBlock: 2,
-    endBlock: 2,
+    startBlock: 1,
+    endBlock: 1,
   })}
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: no-wrap;
 `;
 
 export const LogoContainer = styled.figure`

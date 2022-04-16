@@ -1,5 +1,8 @@
 import React from 'react';
 
+//* Components
+import { SearchBar } from '@/components';
+
 //* Styled Components
 import { LogoContainer, LogoImg, LogoText, HeaderStyled } from './styles';
 
@@ -13,6 +16,7 @@ export const Header = () => {
         <LogoImg src={Images.logoSRC} alt="Unplash logo" />
         <LogoText>Unplash</LogoText>
       </LogoContainer>
+      <SearchBar />
     </HeaderStyled>
   );
 };
