@@ -1,11 +1,11 @@
 import React, { createContext } from 'react';
 
-//* Interfaces
-import { Images } from '../../interfaces/images';
+//* Interfcaes
+import { IImages } from '@/interfaces';
 
 interface SearchContextProps {
   isLoading: boolean;
-  images: Images[];
+  images: IImages.Images[];
 }
 
 export const SearchContext = createContext<SearchContextProps>({} as SearchContextProps);

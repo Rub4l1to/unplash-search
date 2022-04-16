@@ -1,14 +1,14 @@
 import React, { useReducer } from 'react';
 
 //* Interfaces
-import { Images } from '../../interfaces/images';
+import { IImages } from '@/interfaces';
 
 import { SearchContext } from './SearchContext';
 import { searchReducer } from './searchReducer';
 
 export interface SearchState {
   isLoading: boolean;
-  images: Images[];
+  images: IImages.Images[];
 }
 
 const INITIAL_STATE: SearchState = {
