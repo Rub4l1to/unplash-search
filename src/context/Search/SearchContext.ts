@@ -1,7 +1,11 @@
-import React, { createContext } from "react";
+import React, { createContext } from 'react';
 
-interface SearchContextProps {}
+//* Interfaces
+import { Images } from '../../interfaces/images';
 
-export const SearchContext = createContext<SearchContextProps>(
-  {} as SearchContextProps
-);
+interface SearchContextProps {
+  isLoading: boolean;
+  images: Images[];
+}
+
+export const SearchContext = createContext<SearchContextProps>({} as SearchContextProps);

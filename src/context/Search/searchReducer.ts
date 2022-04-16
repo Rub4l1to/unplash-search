@@ -1,15 +1,15 @@
-import { SearchState } from "./SearchProvider";
+import { SearchState } from './SearchProvider';
 
-type SearchAction = {
-  type: string;
-  payload: any;
-};
+//* Interfaces
+import { Images } from '../../interfaces/images';
 
-export const searchReducer = (
-  state: SearchState,
-  action: SearchAction
-): SearchState => {
+type SearchAction = { type: 'SEARCH_SET_RESULTS'; payload: Images[] };
+
+export const searchReducer = (state: SearchState, action: SearchAction): SearchState => {
   switch (action.type) {
+    case 'SEARCH_SET_RESULTS':
+      return { ...state, isLoading: false, images: action.payload };
+
     default:
       return state;
   }

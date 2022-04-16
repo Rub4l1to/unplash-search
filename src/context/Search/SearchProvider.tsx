@@ -1,11 +1,20 @@
-import React, { useReducer } from "react";
+import React, { useReducer } from 'react';
 
-import { SearchContext } from "./SearchContext";
-import { searchReducer } from "./searchReducer";
+//* Interfaces
+import { Images } from '../../interfaces/images';
 
-export interface SearchState {}
+import { SearchContext } from './SearchContext';
+import { searchReducer } from './searchReducer';
 
-const INITIAL_STATE: SearchState = {};
+export interface SearchState {
+  isLoading: boolean;
+  images: Images[];
+}
+
+const INITIAL_STATE: SearchState = {
+  isLoading: false,
+  images: [],
+};
 
 interface Props {
   children: JSX.Element | JSX.Element[];
