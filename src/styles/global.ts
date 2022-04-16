@@ -1,4 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+
+//* Assets
+import { Fonts } from '@/assets';
 
 export default createGlobalStyle`
     * {
@@ -38,4 +41,29 @@ export default createGlobalStyle`
         outline:0;
     }
 
+
+    @font-face{
+        font-family: 'ZenKakuGothic-ExtraBold';
+        src: url(${Fonts.ZenKakuGothicExtraBold}) format('truetype');
+    }
+
+    @font-face{
+        font-family: 'ZenKakuGothic-Bold';
+        src: url(${Fonts.ZenKakuGothicBold}) format('truetype');
+    }
+
+    @font-face{
+        font-family: 'ZenKakuGothic-Medium';
+        src: url(${Fonts.ZenKakuGothicMedium}) format('truetype');
+    }
+
+    @font-face{
+        font-family: 'ZenKakuGothic-Regular';
+        src: url(${Fonts.ZenKakuGothicRegular}) format('truetype');
+    }
+
+    @font-face{
+        font-family: 'ZenKakuGothic-Light';
+        src: url(${Fonts.ZenKakuGothicLight}) format('truetype');
+    }
  `;
