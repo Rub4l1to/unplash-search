@@ -9,6 +9,15 @@ export const fadeIn = keyframes`
     }
 `;
 
+export const fadeOut = keyframes`
+    100% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0;
+    }
+`;
+
 export const spin = keyframes`
     0% {
       transform: rotate(0deg);

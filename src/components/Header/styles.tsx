@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 //* Global styles
-import { Mixins } from '@/styles';
+import { Mixins, Animations } from '@/styles';
 
 export const HeaderStyled = styled.div`
   ${Mixins.PaddingSize({
@@ -14,8 +14,9 @@ export const HeaderStyled = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: no-wrap;
+  transition: all 300ms ease;
 
   &::before {
     content: '';
@@ -40,4 +41,11 @@ export const LogoImg = styled.img`
 export const LogoText = styled.h1`
   font-family: ${({ theme: { fonts } }) => fonts.extrabold};
   font-size: 30px;
+  inline-size: 0;
+  visibility: hidden;
+  @media (min-width: 720px) {
+    inline-size: auto;
+    visibility: visible;
+    animation: ${Animations.fadeIn} 0.5s ease;
+  }
 `;
