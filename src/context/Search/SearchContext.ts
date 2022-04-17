@@ -5,7 +5,10 @@ import { IImages } from '@/interfaces';
 
 interface SearchContextProps {
   isLoading: boolean;
-  images: IImages.Images[];
+  images: IImages.Result[];
+
+  //* Methods
+  searchSearchByTerm: (query: string) => Promise<IImages.Result[]>;
 }
 
 export const SearchContext = createContext<SearchContextProps>({} as SearchContextProps);

@@ -4,12 +4,13 @@ import React from 'react';
 import { HomeStyled } from './styles';
 
 //* Components
-import { Header } from '@/components';
+import { Header, List } from '@/components';
 
 export const Home = () => {
   return (
     <HomeStyled>
       <Header />
+      <List />
     </HomeStyled>
   );
 };

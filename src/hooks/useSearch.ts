@@ -1,6 +1,11 @@
-import React, { ChangeEvent, useRef, useCallback } from 'react';
+import React, { ChangeEvent, useRef, useCallback, useContext } from 'react';
+
+//* Context
+import { SearchContext } from '@/context';
 
 export const useSearch = () => {
+  const { searchSearchByTerm } = useContext(SearchContext);
+
   const debounceRef = useRef<NodeJS.Timeout>();
 
   const onQueryChanged = useCallback((event: ChangeEvent<HTMLInputElement>) => {
@@ -8,7 +13,7 @@ export const useSearch = () => {
     if (debounceRef.current) {
       clearTimeout(debounceRef.current);
     }
-    debounceRef.current = setTimeout(() => console.log(query), 500);
+    debounceRef.current = setTimeout(() => searchSearchByTerm(query), 500);
   }, []);
 
   return {
