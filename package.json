@@ -1,7 +1,7 @@
 {
   "name": "unplash-search",
   "private": false,
-  "version": "0.0.1",
+  "version": "1.0.1",
   "homepage": "https://github.com/Rub4l1to/unplash-search#readme",
   "license": "MIT",
   "scripts": {
