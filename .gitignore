@@ -25,4 +25,3 @@ dist-ssr
 
 # Build output
 .env*
-/build
