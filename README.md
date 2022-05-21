@@ -8,6 +8,10 @@
 
 The web application basically tries to connect to the unplash API and perform image searches based on our own search.
 
+## Preview
+
+![Captura de Pantalla 2022-05-21 a las 20 06 02](https://user-images.githubusercontent.com/48188704/169664007-a4e0da75-bba4-4a89-aaa8-6b031f98d095.png)
+
 ## Features
 
 - Search engine for images
